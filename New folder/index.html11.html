@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azərbaycan Texniki Universiteti</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#f4f6fa;
+}
+
+/* HEADER */
+header{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:3px solid #0b2a4a;
+}
+
+.logo img{
+    height: 90px;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#0b2a4a;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#0077cc;
+}
+
+/* HERO */
+.hero{
+    height:550px;
+    background:url("https://www.aztu.edu.az/web_admin/upload/files/aztu.edu.az/news/10-2024/1694624391591.jpg") center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+    background:rgba(0,0,0,0.5);
+    padding:10px 20px;
+}
+
+.hero p{
+    margin-top:10px;
+    background:rgba(0,0,0,0.4);
+    padding:5px 10px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0b2a4a;
+}
+
+/* NEWS / CARDS */
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TIMELINE */
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.event{
+    background:white;
+    padding:15px 20px;
+    border-left:5px solid #0b2a4a;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.event h3{
+    color:#0b2a4a;
+    margin-bottom:5px;
+}
+
+.event p{
+    color:#333;
+    line-height:1.5;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b2a4a;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://aztu.edu.az/logo/aztu-logo-light.png">
+    </div>
+
+    <nav>
+        <a href="#">Ana səhifə</a>
+        <a href="#">Universitet</a>
+        <a href="#">Tarix</a>
+        <a href="#">Əlaqə</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Azərbaycan Texniki Universiteti</h1>
+    <p>Elm • Təhsil • İnnovasiya</p>
+</div>
+
+<div class="container">
+
+    <h2 class="section-title">Universitet Haqqında</h2>
+
+    <div class="card">
+        <p>Azərbaycan Texniki Universiteti mühəndislik və texnologiya sahəsində yüksək ixtisaslı kadrlar hazırlayan aparıcı ali təhsil müəssisəsidir.</p>
+    </div>
+
+    <h2 class="section-title">Universitetin Tarixi</h2>
+
+    <div class="timeline">
+
+        <div class="event"><h3>1950</h3><p>Azərbaycanda texniki təhsilin əsası qoyuldu.</p></div>
+        <div class="event"><h3>1905</h3><p>Orta texniki məktəb kimi yenidən təşkil olundu.</p></div>
+        <div class="event"><h3>1910</h3><p>Neft mexanikası və elektromexanika ixtisasları yaradıldı.</p></div>
+        <div class="event"><h3>1918</h3><p>Politexnik məktəbi statusu aldı.</p></div>
+        <div class="event"><h3>1920</h3><p>Bakı Politexnik İnstitutu yaradıldı.</p></div>
+        <div class="event"><h3>1923</h3><p>Azərbaycan Politexnik İnstitutu adlandırıldı.</p></div>
+        <div class="event"><h3>1930</h3><p>Azərbaycan Neft İnstitutu kimi fəaliyyət göstərdi.</p></div>
+        <div class="event"><h3>1934</h3><p>Azərbaycan Sənaye İnstitutu yaradıldı.</p></div>
+        <div class="event"><h3>1950</h3><p>Politexnik İnstitutu yenidən fəaliyyətə başladı.</p></div>
+        <div class="event"><h3>1955</h3><p>Universitet əsas binaya köçürüldü.</p></div>
+        <div class="event"><h3>1975</h3><p>Yeni ali texniki təhsil müəssisələrinin yaranmasına zəmin oldu.</p></div>
+        <div class="event"><h3>1978</h3><p>Beynəlxalq əlaqələr genişləndirildi.</p></div>
+        <div class="event"><h3>1983</h3><p>Elmi nailiyyətlərə görə mükafatlandırıldı.</p></div>
+        <div class="event"><h3>1991</h3><p>Azərbaycan Texniki Universiteti adı verildi.</p></div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Azərbaycan Texniki Universiteti
+</footer>
+
+</body>
+</html>

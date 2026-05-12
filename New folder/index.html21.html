@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bakı Texniki Kollecləri</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:85px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#003366;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0055cc;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url("https://imgs.su/users/66963/1495357089.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#0055cc;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0077ff;
+}
+
+/* SECTION */
+
+.section{
+    padding:120px 10%;
+    background:white;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-size:45px;
+    color:#003366;
+}
+
+.title p{
+    color:#666;
+    margin-top:10px;
+}
+
+/* INFO BLOCK */
+
+.info{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.info img{
+    flex:1;
+    min-width:300px;
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.info-text{
+    flex:1;
+    min-width:300px;
+}
+
+.info-text h3{
+    font-size:35px;
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.info-text p{
+    line-height:2;
+    color:#444;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+
+.cards{
+    padding:120px 10%;
+    background:#f4f7fb;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+/* LIST SECTION */
+
+.list-section{
+    padding:120px 10%;
+    background:white;
+}
+
+.list-box{
+    background:#f4f7fb;
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+    color:#444;
+}
+
+/* FOOTER */
+
+footer{
+    background:#002244;
+    color:#fff;
+    text-align:center;
+    padding:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    header{
+        padding:0 20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AzTU</div>
+
+<nav>
+<a href="#">Ana səhifə</a>
+<a href="#">Kolleclər</a>
+<a href="#">Təhsil</a>
+<a href="#">Əlaqə</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+<h1>Bakı Texniki Kollecləri</h1>
+<p>
+Azərbaycan Texniki Universiteti nəzdində fəaliyyət göstərən texniki və peşə təhsili müəssisələri.
+</p>
+
+<a href="#about" class="btn">Ətraflı Bax</a>
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<div class="title">
+<h2>Ümumi Məlumat</h2>
+<p>Kolleclər haqqında rəsmi məlumat</p>
+</div>
+
+<div class="info">
+
+<img src="https://avatars.mds.yandex.net/get-altay/11420721/ea6f353448228d2aad8603f49f8710a2.jpg/L_height">
+
+<div class="info-text">
+
+<h3>Texniki Təhsil Sistemi</h3>
+
+<p>
+Bakı Texniki Kollecləri Azərbaycanda texniki və peşə təhsilinin inkişafında mühüm rol oynayır.
+</p>
+
+<p>
+Tələbələrə praktiki bacarıqlar, müasir texnologiyalar və sənaye yönümlü biliklər verilir.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="title">
+<h2>Kolleclərin İstiqamətləri</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Mühəndislik</h3>
+<p>Mexanika, elektrik və tikinti sahələri üzrə təhsil.</p>
+</div>
+
+<div class="card">
+<h3>İT və Rəqəmsal</h3>
+<p>Proqramlaşdırma və kompüter texnologiyaları.</p>
+</div>
+
+<div class="card">
+<h3>İqtisadiyyat</h3>
+<p>Biznes və idarəetmə sahələri.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="list-section">
+
+<div class="title">
+<h2>Kolleclər Siyahısı</h2>
+</div>
+
+<div class="list-box">
+
+* Bakı Texniki Kolleci  
+<br>
+* Bakı Rabitə və Nəqliyyat Kolleci  
+<br>
+* Sənaye və Texnologiya Kolleci  
+<br>
+* İqtisadiyyat və Humanitar Kolleclər  
+<br>
+* Digər tərəfdaş texniki kolleclər  
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Bakı Texniki Kollecləri | Bütün hüquqlar qorunur
+</footer>
+
+</body>
+</html>

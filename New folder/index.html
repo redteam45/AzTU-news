@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AzTU Haqqımızda</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f7f7f7;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+    width:100%;
+    height:120px;
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 70px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+     width:80px;
+    height:auto;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#1f2d63;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+    position:relative;
+}
+
+nav ul li a:hover{
+    color:#ef6b73;
+}
+
+.active{
+    color:#ef6b73;
+}
+
+.active::after{
+    content:'';
+    width:100%;
+    height:3px;
+    background:#ef6b73;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+}
+
+/* MAIN SECTION */
+
+.main{
+    width:100%;
+    min-height:100vh;
+    padding:60px 70px;
+    display:flex;
+    gap:30px;
+    background-image:
+    linear-gradient(#ececec 1px, transparent 1px),
+    linear-gradient(90deg,#ececec 1px, transparent 1px);
+
+    background-size:100px 100px;
+}
+
+/* LEFT IMAGE */
+
+.left-image{
+    width:38%;
+    height:620px;
+    border-radius:45px;
+    overflow:hidden;
+    flex-shrink:0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.left-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    gap:30px;
+    width:62%;
+}
+
+.card{
+    flex:1;
+    background:white;
+    border:1px solid #d8d8d8;
+    border-radius:45px;
+    padding:45px 40px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-title{
+    color:#b3b8c7;
+    font-size:16px;
+    letter-spacing:5px;
+    line-height:1.8;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#ef6b73;
+    border-radius:50%;
+    margin-bottom:35px;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card ul li{
+    margin-bottom:32px;
+}
+
+.card ul li a{
+    text-decoration:none;
+    color:#626b7f;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.5;
+    transition:0.3s;
+}
+
+.card ul li a:hover{
+    color:#1f2d63;
+}
+
+/* SEARCH BUTTON */
+
+.search-btn{
+    width:48px;
+    height:48px;
+    background:#1f2d63;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .main{
+        flex-direction:column;
+    }
+
+    .left-image{
+        width:100%;
+    }
+
+    .cards{
+        width:100%;
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:20px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .main{
+        padding:30px 20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+    <img src="https://aztu.edu.az/logo/aztu-logo-light.png">
+</div>
+
+<nav>
+<ul>
+
+<li><a href="#" class="active">Haqqımızda</a></li>
+<li><a href="#">Ana səhifə</a></li>
+<li><a href="#">Xəbərlər</a></li>
+<li><a href="#">Layihələr və Konfranslar</a></li>
+<li><a href="#">Sosial</a></li>
+
+
+<li>
+<div class="search-btn">
+⌕
+</div>
+</li>
+
+</ul>
+</nav>
+
+</header>
+
+<!-- MAIN -->
+
+<section class="main">
+
+<!-- IMAGE -->
+
+<div class="left-image">
+
+<img src="https://aztu.edu.az/aztu.png">
+
+</div>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<h3 class="card-title">
+VİZYON VƏ MİSSİYA
+</h3>
+
+<div class="dot"></div>
+
+<ul>
+<li><a href="index (3).html">Vizyon, Missiya, Məqsəd</a></li>
+<li><a href="index.html11.html">AzTU-nun tarixi</a></li>
+<li><a href="index.html17.html">75 illik Yubiley Filmi</a></li>
+</ul>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<h3 class="card-title">
+RƏHBƏRLİK VƏ İDARƏETMƏ
+</h3>
+
+<div class="dot"></div>
+
+<ul>
+<li><a href="index.html7.html">Rektor</a></li>
+<li><a href="index.html15.html">Sabiq Rektorlarımız</a></li>
+</ul>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<h3 class="card-title">
+TƏRƏFDAŞ UNİVERSİTET VƏ ƏLAQƏLİ İNSTİTUTLAR
+</h3>
+
+<div class="dot"></div>
+
+<ul>
+<li><a href="index.html3.html">Türk-Azərbaycan Universiteti (TAU)</a></li>
+<li><a href="index.html5.html">İnformasiya Texnologiyaları İnstitutu</a></li>
+<li><a href="index.html19.html">İdarəetmə Sistemləri İnstitutu</a></li>
+<li><a href="index.html21.html">Bakı Texniki Kollecləri</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

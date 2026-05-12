@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzTU - Sabiq Rektorlarımız</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:90px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:700;
+    color:#003366;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:35px;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0055cc;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://media.licdn.com/dms/image/v2/D4D3DAQG46N_-vnRckg/image-scale_191_1128/B4DZwjxYerG8Ac-/0/1770126678633/aztueduaz_cover?e=2147483647&v=beta&t=Qyt0f_52NYSTIAo2H5ssQKG6gucK_YIGnA1t6kbp41A');
+    
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* SECTION */
+
+.section{
+    width:100%;
+    padding:120px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.title h2{
+    font-size:50px;
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.title p{
+    color:#666;
+}
+
+/* CARDS */
+
+.rectors{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:35px;
+}
+
+.card-content h3{
+    font-size:30px;
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.card-content span{
+    color:#0055cc;
+    font-weight:600;
+    display:block;
+    margin-bottom:20px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#0055cc;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0077ff;
+}
+
+/* DETAILS */
+
+.detail-section{
+    width:100%;
+    padding:120px 10%;
+    background:white;
+}
+
+.detail-box{
+    background:#f4f7fb;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.detail-box h2{
+    font-size:45px;
+    color:#003366;
+    margin-bottom:25px;
+}
+
+.detail-box p{
+    line-height:2;
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#002244;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    opacity:0.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        padding:0 20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .title h2{
+        font-size:35px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AzTU</div>
+
+<nav>
+<a href="#">Ana səhifə</a>
+<a href="#">Universitet</a>
+<a href="#">Rəhbərlik</a>
+<a href="#">Fakültələr</a>
+<a href="#">Əlaqə</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Sabiq Rektorlarımız</h1>
+
+<p>
+Azərbaycan Texniki Universitetinə rəhbərlik etmiş sabiq rektorlar.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="title">
+
+<h2>Rektorlar</h2>
+
+<p>AzTU tarixində fəaliyyət göstərmiş rəhbərlər</p>
+
+</div>
+
+<div class="rectors">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img src="https://xalqxeber.az/uploads/posts/2021-11/1637747851_1564584551_untitled-1.jpg">
+
+<div class="card-content">
+
+<h3>Vilayət Vəliyev</h3>
+
+<span>2016 - 2023</span>
+
+<p>
+Universitetin beynəlxalq inkişafı və rəqəmsal transformasiyası istiqamətində mühüm fəaliyyət göstərmişdir.
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img src="https://xalqcebhesi.az/media/2023/09/13/havar_memmedov.jpg">
+
+<div class="card-content">
+
+<h3>Havar Məmmədov</h3>
+
+<span>2000 - 2015</span>
+
+<p>
+Texniki təhsil və elmi fəaliyyət sahəsində universitetin inkişafına böyük töhfələr vermişdir.
+</p>
+
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/az/6/62/%C6%8Fli_Quliyev_%28akademik%29.jpg">
+
+<div class="card-content">
+
+<h3>Əli Quliyev</h3>
+
+<span>1985 - 1999</span>
+
+<p>
+Universitetin infrastrukturunun genişləndirilməsi və mühəndislik sahələrinin inkişafında iştirak etmişdir.
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DETAIL 1 -->
+
+<section class="detail-section" id="detail1">
+
+<div class="detail-box">
+
+<h2>Vilayət Vəliyev</h2>
+
+<p>
+Vilayət Vəliyev Azərbaycan Texniki Universitetinin beynəlxalq əlaqələrinin genişləndirilməsi istiqamətində mühüm layihələr həyata keçirmişdir.
+</p>
+
+<p>
+Onun rəhbərliyi dövründə universitetdə müasir laboratoriyalar və innovasiya mərkəzləri yaradılmışdır.
+</p>
+
+</div>
+
+</section>
+
+<!-- DETAIL 2 -->
+
+<section class="detail-section" id="detail2">
+
+<div class="detail-box">
+
+<h2>Havar Məmmədov</h2>
+
+<p>
+Havar Məmmədov universitetin texniki təhsil sisteminin inkişafı və elmi fəaliyyətinin gücləndirilməsi istiqamətində mühüm addımlar atmışdır.
+</p>
+
+<p>
+Beynəlxalq layihələrin və elmi konfransların təşkilində aktiv iştirak etmişdir.
+</p>
+
+</div>
+
+</section>
+
+<!-- DETAIL 3 -->
+
+<section class="detail-section" id="detail3">
+
+<div class="detail-box">
+
+<h2>Əli Quliyev</h2>
+
+<p>
+Əli Quliyev universitetin maddi-texniki bazasının inkişafı və yeni tədris istiqamətlərinin yaradılmasına rəhbərlik etmişdir.
+</p>
+
+<p>
+Onun dövründə universitetdə bir sıra yeni tədris korpusları istifadəyə verilmişdir.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Azərbaycan Texniki Universiteti | Bütün hüquqlar qorunur</p>
+
+</footer>
+
+</body>
+</html>

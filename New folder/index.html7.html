@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzTU Rektor</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:90px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:700;
+    color:#003366;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:35px;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+    position:relative;
+}
+
+nav a:hover{
+    color:#0055cc;
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#0055cc;
+    left:0;
+    bottom:-6px;
+    transition:0.4s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('https://sia.az/storage/2023/08/04/1691159629171773378_1200x630.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:900px;
+    color:white;
+    animation:fade 1.2s ease;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#0055cc;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    transition:0.4s;
+}
+
+.hero-btn:hover{
+    background:#0077ff;
+    transform:translateY(-5px);
+}
+
+/* RECTOR SECTION */
+
+.rector-section{
+    width:100%;
+    padding:120px 10%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:45px;
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:18px;
+}
+
+.rector-container{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.rector-image{
+    flex:1;
+    min-width:300px;
+}
+
+.rector-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.rector-info{
+    flex:1;
+    min-width:300px;
+}
+
+.rector-info h3{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#003366;
+}
+
+.rector-info span{
+    color:#0055cc;
+    font-weight:600;
+}
+
+.rector-info p{
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#444;
+    font-size:17px;
+}
+
+/* CARDS */
+
+.cards{
+    width:100%;
+    padding:100px 10%;
+    background:#f5f7fb;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    transition:0.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:20px;
+    color:#003366;
+    font-size:28px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#002244;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer p{
+    opacity:0.8;
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        padding:0 20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .section-title h2{
+        font-size:35px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">AzTU</div>
+
+    <nav>
+        <a href="#">Ana səhifə</a>
+        <a href="#">Universitet</a>
+        <a href="#">Rəhbərlik</a>
+        <a href="#">Fakültələr</a>
+        <a href="#">Əlaqə</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Azərbaycan Texniki Universiteti</h1>
+
+        <p>
+            Universitet rəhbərliyi və idarəetmə strukturu haqqında
+            ətraflı məlumat. Müasir texnologiya və innovasiya yönümlü ali təhsil müəssisəsi.
+        </p>
+
+
+    </div>
+
+</section>
+
+<section class="rector-section">
+
+    <div class="section-title">
+
+        <h2>Rektor</h2>
+
+        <p>Universitet rəhbərliyi haqqında məlumat</p>
+
+    </div>
+
+    <div class="rector-container">
+
+        <div class="rector-image">
+
+            <img src="https://files.azedu.az/articles/2019/08/01/83259.jpg" alt="Rektor">
+
+        </div>
+
+        <div class="rector-info">
+
+            <h3>Vilayət Vəliyev</h3>
+
+            <span>Azərbaycan Texniki Universitetinin rektoru</span>
+
+            <p>
+                Azərbaycan Texniki Universitetinin inkişaf strategiyasının hazırlanması,
+                beynəlxalq əlaqələrin gücləndirilməsi və innovativ təhsil sisteminin
+                tətbiqi istiqamətində geniş fəaliyyət göstərir.
+            </p>
+
+            <p>
+                Universitetdə müasir laboratoriyaların qurulması,
+                tələbələrin beynəlxalq layihələrə cəlb olunması və
+                rəqəmsal transformasiya istiqamətində mühüm işlər həyata keçirilmişdir.
+            </p>
+
+            <p>
+                Təhsil, elm və sənaye əməkdaşlığının gücləndirilməsi əsas prioritetlərdən biridir.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cards">
+
+    <div class="section-title">
+
+        <h2>Əsas İstiqamətlər</h2>
+
+        <p>Universitetin fəaliyyət sahələri</p>
+
+    </div>
+
+    <div class="card-grid">
+
+        <div class="card">
+
+            <h3>Elm və İnnovasiya</h3>
+
+            <p>
+                Müasir texnologiyalar və innovativ layihələr üzərində aparılan
+                elmi tədqiqatlar universitetin əsas prioritetlərindəndir.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Beynəlxalq Əlaqələr</h3>
+
+            <p>
+                Xarici universitetlərlə əməkdaşlıq və beynəlxalq proqramlarda
+                aktiv iştirak universitetin inkişafına töhfə verir.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Tələbə Həyatı</h3>
+
+            <p>
+                Tələbələrin sosial və akademik inkişafı üçün müasir
+                imkanlar və layihələr təqdim olunur.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Azərbaycan Texniki Universiteti | Bütün hüquqlar qorunur</p>
+
+</footer>
+
+</body>
+</html>
